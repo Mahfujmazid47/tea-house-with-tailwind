@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
-      .manrope-font {
+      .font-manrope {
   font-family: "Manrope", serif;
   font-optical-sizing: auto;
 }
@@ -24,15 +24,18 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontFamily: {
+                'manrope':['Manrope', 'sans-serif'],
               }
             }
           }
         }
       </script>
 </head>
-<body >
+<body class="font-manrope">
   <!-- Main Content  -->
-  <main class="max-w-screen-xl mx-auto px-16 lg:px-28 manrope-font">
+  <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
     <!-- Header Section  -->
      <header class="mb-24 md:flex pt-10 mt-20">
       <!-- Text Content  -->
@@ -44,13 +47,14 @@
            <button class="bg-gradient-to-r from-orange-500 to-red-500 py-3 px-5 rounded-lg text-white font-bold">Explore More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
        </div>
        <!-- Image Content  -->
-        <div>
-          <!-- Image  -->
-          <div class="relative z-10">
-            <img class="w-full" src="images/banner.png" alt="">
+        <div class="relative">
+          <div>
+            <!-- Image  -->
+          <div class="">
+            <img class="w-full relative" src="images/banner.png" alt="">
           </div>
           <!-- card  -->
-           <div class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg  z-20">
+           <div class="absolute top-32 md:top-80 md:left-32 lg:left-28  flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg">
             <!-- icon -->
              <div><i class="fa-solid fa-star text-2xl text-[#FFC850]"></i></div>
              <!-- Text  -->
@@ -59,6 +63,7 @@
                 <p class="text-[#777777] font-semibold">Trust Pilot Ratings</p>
               </div>
            </div>
+          </div>
         </div>
      </header>
 
@@ -147,7 +152,7 @@
              <!-- Reviwes Card Section  -->
               <div class="relative py-24">
                 <!-- Middle card -->
-                <div class="absolute z-10 top-48">
+                <div class="absolute z-10 top-48 ">
                   <div class="relative top-10 h-56 w-full md:w-3/4
                 bg-white text-blackr rounded-lg flex items-center px-5">
                  <div class="absolute -top-5 -left-5 bg-white rounded-full">
